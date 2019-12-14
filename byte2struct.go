@@ -24,7 +24,6 @@ func ReadBinaryWithStart(data []byte, s interface{}) error {
 	for index := 0; index < structType.NumField(); index++ {
 		fieldType := structType.Field(index)
 		fieldValue := structValue.Field(index)
-		fmt.Printf("field type %+v field value %+v", fieldType, fieldValue)
 		start := fieldType.Tag.Get("start")
 		if start == "" {
 			return fmt.Errorf("tag miss start")
