@@ -1,3 +1,3 @@
-module github.com/linanwx/Byte2Struct
+module github.com/linanwx/byte2struct
 
 go 1.13
